@@ -1,9 +1,36 @@
 html,
 body {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../assets/San Francisco Pro Text/SF-Pro-Display-Black.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Text Bold';
+  src: url('../assets/San Francisco Pro Text/SF-Pro-Text-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('../assets/San Francisco Pro Text/FontsFree-Net-SFProText-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display Semibold';
+  src: url('../assets/San Francisco Pro Text/SF-Pro-Display-Semibold.otf');
+  font-weight: 900;
+  font-style: normal;
 }
 
 a {
@@ -14,3 +41,255 @@ a {
 * {
   box-sizing: border-box;
 }
+.app {
+  /* background: linear-gradient(rgba(65, 66, 99, 0.09), url(/public/static/img/MaskGroup.png)); */
+  /* background-image: url('../public/static/img/MaskGroup.png');
+   */
+
+  background: linear-gradient(180deg, #131317 -60.19%, rgba(65, 66, 99, 0.09) 50%),
+    url('../public/static/img/MaskGroup.png') no-repeat center;
+  height: 100%;
+  width: 100%;
+
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.overlay {
+  /* position: absolute;
+  width: 1920px;
+  height: 1080px;
+  left: 0px;
+  top: 0px;
+  z-index: 1; */
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+  opacity: 1;
+  z-index: 2;
+
+  /* background-image: url('../public/static/img/Mask Group.png');
+    background-position: center;
+    background-size: cover; */
+}
+header {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  border-bottom: 1px solid rgba(231, 231, 242, 0.4);
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background: transparent;
+}
+
+.group {
+  position: relative;
+  display: flex;
+}
+
+.group .navigation,
+.group .registration,
+.group .camping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.group .camping {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+}
+.group .navigation li {
+  margin-right: 60px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.group .registration li {
+  margin-left: 60px;
+  padding: 0;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.group ul li {
+  list-style: none;
+  color: white;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+}
+
+.banner .bg {
+  position: relative;
+  width: 100%;
+  background: white;
+  height: 75vh;
+}
+
+.banner__title {
+  display: block;
+  margin-top: 250px;
+  max-width: 860px;
+  max-height: 210px;
+  margin: 250px 0 0 0;
+}
+
+.banner__subtitle {
+  display: block;
+  max-width: 860px;
+  max-height: 84px;
+}
+
+h1 {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+  color: white;
+}
+
+h2 {
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 150%;
+
+  color: #ffffff;
+
+  opacity: 0.8;
+}
+
+.popup {
+  top: 314px;
+  position: absolute;
+  width: 570px;
+  height: 400px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(70px);
+  border-radius: 16px 0px 0px 16px;
+}
+
+.book {
+  position: fixed;
+  bottom: 0;
+  min-width: 1440px;
+  height: 201px;
+  padding: 35px 50px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(70px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px 20px 0px 0px;
+}
+
+.book__title {
+  font-family: 'SF Pro Text Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+
+.book__content {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book__panel_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.3;
+  border: 1px solid #e7e7f2;
+  border-radius: 10px;
+}
+
+.accomodation {
+  width: 460px;
+}
+
+.checkin {
+  width: 190px;
+}
+
+.checkout {
+  width: 150px;
+}
+
+.guests {
+  width: 265px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  cursor: pointer;
+
+  background: #91cb82;
+  border-radius: 10px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 111% */
+  color: #ffffff;
+  border: 0;
+}
+
+/* .book {
+  position: absolute;
+  bottom: 0;
+
+  width: 1440px;
+  height: 201px;
+  background-color: #979797;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.popup {
+  bottom: 366px;
+  position: absolute;
+  width: 570px;
+  height: 400px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(70px);
+  border-radius: 16px 0px 0px 16px;
+}
+
+.popup__image {
+  background-image: url('../public/static/img/andrew-ridley-RwfWSH6Xq0M-unsplash-min.png');
+  z-index: 1;
+} */
