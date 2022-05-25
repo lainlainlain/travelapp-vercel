@@ -58,12 +58,14 @@ function Book() {
                 <p className={styles.book_item__text}>4 adults</p>
               </div>
             </div>
-            <Image
-              src="/static/img/arrow-drop-down-line.svg"
-              alt="Landscape picture"
-              width={28}
-              height={28}
-            />
+            <div className={styles.guests__dropdown}>
+              <Image
+                src="/static/img/arrow-drop-down-line.svg"
+                alt="Landscape picture"
+                width={28}
+                height={28}
+              />
+            </div>
           </div>
         </div>
         <button className={styles.btn}>Search</button>
