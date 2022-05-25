@@ -1,0 +1,54 @@
+.popup {
+  justify-content: space-between;
+  display: flex;
+  padding: 48px 36px;
+  top: 310px;
+  position: absolute;
+  width: 570px;
+  height: 400px;
+  right: -248px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(70px);
+  border-radius: 16px 0px 0px 16px;
+}
+
+.popup__subtitle {
+  font-family: 'SF Pro Display 600';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.popup__title {
+  width: 204px;
+  margin-top: 36px;
+  font-family: 'SF Pro Text Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 135%;
+  /* or 49px */
+
+  color: #ffffff;
+}
+
+.popup__bg {
+  position: absolute;
+  left: 300px;
+  top: 0px;
+  background: url('../public/static/img/andrew.png') center no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+  object-fit: fill;
+}
+
+.popup__img {
+  margin-top: 85px;
+}

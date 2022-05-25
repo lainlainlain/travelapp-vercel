@@ -1,0 +1,22 @@
+.banner {
+  position: relative;
+  margin: 260px 0 0 0;
+}
+
+.banner__title {
+  position: relative;
+  right: -7px;
+  display: block;
+  max-width: 860px;
+  max-height: 210px;
+}
+
+.banner__subtitle {
+  position: relative;
+  bottom: -5px;
+  right: -7px;
+  margin-top: 32px;
+  display: block;
+  max-width: 860px;
+  max-height: 84px;
+}

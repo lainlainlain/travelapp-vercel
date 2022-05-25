@@ -1,0 +1,56 @@
+.group {
+  position: relative;
+  display: flex;
+}
+
+.group .navigation,
+.group .registration,
+.group .camping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.group .camping {
+  position: relative;
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  right: -52px;
+  bottom: -5px;
+  /* identical to box height */
+}
+.group .navigation li {
+  position: relative;
+  bottom: -5px;
+  left: 5px;
+  margin-right: 60px;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.group .registration li {
+  position: relative;
+  bottom: -5px;
+  right: 8px;
+  margin-left: 60px;
+  padding: 0;
+  font-family: 'SF Pro Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.group ul li {
+  list-style: none;
+  color: white;
+}
+
+.searchImg {
+  left: 10px;
+}
