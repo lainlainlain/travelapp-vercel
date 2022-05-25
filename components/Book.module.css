@@ -33,13 +33,6 @@
 }
 
 .book__panel_wrapper {
-  /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0.3;
-    border: 1px solid #e7e7f2;
-    border-radius: 10px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -134,29 +127,3 @@
   color: #ffffff;
   border: 0;
 }
-
-/* .book {
-    position: absolute;
-    bottom: 0;
-  
-    width: 1440px;
-    height: 201px;
-    background-color: #979797;
-    border-radius: 20px 20px 0px 0px;
-  }
-  
-  .popup {
-    bottom: 366px;
-    position: absolute;
-    width: 570px;
-    height: 400px;
-    right: 0;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(70px);
-    border-radius: 16px 0px 0px 16px;
-  }
-  
-  .popup__image {
-    background-image: url('../public/static/img/andrew-ridley-RwfWSH6Xq0M-unsplash-min.png');
-    z-index: 1;
-  } */

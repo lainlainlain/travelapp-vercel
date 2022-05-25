@@ -1,5 +1,4 @@
 import React from 'react';
-import ArrowPopup from '../public/static/img/Vector.svg';
 import styles from './Popup.module.css';
 import Image from 'next/image';
 

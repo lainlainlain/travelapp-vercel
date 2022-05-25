@@ -1,8 +1,4 @@
 import React from 'react';
-import HomeLine from '../public/static/img/home-line.svg';
-import CalendarLine from '../public/static/img/calendar-line.svg';
-import ArrowDropDown from '../public/static/img/arrow-drop-down-line.svg';
-import User from '../public/static/img/user.svg';
 import Image from 'next/image';
 import styles from './Book.module.css';
 
