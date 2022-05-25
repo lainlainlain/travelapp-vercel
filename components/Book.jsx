@@ -57,7 +57,7 @@ function Book() {
                 <p className={styles.book_item__title}>Guests</p>
                 <p className={styles.book_item__text}>4 adults</p>
               </div>
-            </div>{' '}
+            </div>
             <Image
               src="/static/img/arrow-drop-down-line.svg"
               alt="Landscape picture"

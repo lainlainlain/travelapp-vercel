@@ -42,11 +42,8 @@
   left: 300px;
   top: 0px;
   background: url('../public/static/img/andrew.png') center no-repeat;
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 400px;
   width: 300px;
-  object-fit: fill;
 }
 
 .popup__img {
